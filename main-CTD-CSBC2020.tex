@@ -141,12 +141,14 @@ Logo, o acesso a dados sensíveis em situações emergenciais torna-se compromet
 %a cada minuto em parada respiratória, a probabilidade de sobrevida de uma pessoa diminui 10\%~\cite{pazin2003parada}.
 cada minuto em parada respiratória diminui em 10\% a probabilidade de sobrevida de uma pessoa~\cite{pazin2003parada}.
 
-%A literatura geralmente emprega infraestruturas de redes previamente existentes, tais como WiFi e telefonia móvel, para disseminar dados. Entretanto, ausência dessas infraestruturas 
-%\al{A ausência de infraestruturas de redes torna as soluções disponíveis inadequadas para a disseminação de dados sensíveis distante das instituições de saúde, como em ruas e na residência de pacientes.} 
-\agn{A disseminação de dados sensíveis distante das instituições de saúde, como em ruas e na residência de pacientes, demanda infraestruturas de redes dinâmicas, apropriadas à mobilidade das pessoas ao longo do tempo. Grafos temporais têm sido empregados na caracterização e representação desse tipo de rede~\cite{nzeko2017time}, mas ainda de forma incipiente.}
+\agn{A disseminação de dados sensíveis externos aos ambientes de cuidados de saúde demanda infraestruturas de redes dinâmicas, apropriadas à mobilidade das pessoas ao longo do tempo. Estes ambientes se caracterizam pela sua dinamicidade, mobilidade dos dispositivos, além de demandarem respostas rápidas e efetivas na disseminação dos dados. Os dispositivos detém informações limitadas quando de suas eventuais interações, incluindo, por exemplo, os aspectos sociais dos seus proprietários e de suas relações. Nessas condições, verificar a confiança dos dispositivos para controlar o acesso aos dados sensíveis disseminados torna-se um desafio. Embora eficientes, técnicas tradicionais como reputação e recomendação nem sempre são úteis nesses ambientes, devido sua dependência do histórico das interações passadas dos dispositivos. Dessa forma, além da criação e manutenção de redes dinâmicas para suportar a disseminação dos dados em ambientes dinâmicos, a verificação da confiança dos dispositivos por meio de aspectos sociais dos seus proprietários e de suas relações possibilita uma disseminação segura e de forma controlada às entidades competentes.}
+
+%Portanto, a verificação da confiança dos dispositivos 
+%\as{, recomendação de confiança/ Porque eu não destaco as caraterística deste ambiente e depois onde eu posso encontrar isso (principios).}
+
 %Em ambientes externos às instituições de saúde, como em ruas e na residência de pacientes, %A ausência de infraestruturas de redes tornam as soluções disponíveis inadequadas para a disseminação de dados sensíveis % distante das instituições de saúde, como em ruas e na residência de pacientes. 
-Para evitar o acesso não autorizado aos dados sensíveis, os trabalhos em geral avaliam a confiança dos dispositivos por meio de técnicas de reputação~\cite{truong2017toward}, recomendação~\cite{al2017trust}, experiência e conhecimento~\cite{truong2017toward}.
-\agn{Contudo, essas técnicas dependem do conhecimento das interações passadas dos dispositivos, nem sempre disponíveis devido à mobilidade dos dispositivos. A criação e manutenção de redes dinâmicas associadas aos aspectos sociais dos proprietários dos dispositivos e de suas relações surge com alternativa aos desafios apresentados, pois suportam a disseminação dos dados com segurança e de forma controlada às entidades competentes.}
+%Para evitar o acesso não autorizado aos dados sensíveis, os trabalhos em geral avaliam a confiança dos dispositivos por meio de técnicas de reputação~\cite{truong2017toward}, recomendação~\cite{al2017trust}, experiência e conhecimento~\cite{truong2017toward}.
+%\agn{Contudo, essas técnicas dependem do conhecimento das interações passadas dos dispositivos, nem sempre disponíveis devido à mobilidade dos dispositivos. A criação e manutenção de redes dinâmicas associadas aos aspectos sociais dos proprietários dos dispositivos e de suas relações surge com alternativa aos desafios apresentados, pois suportam a disseminação dos dados com segurança e de forma controlada às entidades competentes.}
 %Contudo, embora eficientes, essas técnicas dependem claramente das interações passadas dos dispositivos, inibindo seu emprego em condições~\textit{Zero-Knowledge}~\cite{kim2015hcs}. 
 %Dessa forma, a disseminação de dados sensíveis apresenta-se como um desafio em ambientes esparsos e diante da mobilidade dos dispositivos, visto que deve ocorrer no momento oportuno e às entidades adequadas, a fim de evitar o acesso não autorizado a esses dados.
 %\al{A caracterização e representação da operação dinâmica destes tipos de ambientes ao longo do tempo têm sido feitas por meio de grafos temporais~\cite{nzeko2017time}.} 
@@ -155,12 +157,11 @@ Para evitar o acesso não autorizado aos dados sensíveis, os trabalhos em geral
 %Com o advento das cidades inteligentes, especialmente diante do desenvolvimento da Internet das Coisas (do inglês, \textit{Internet of Things} (IoT)), o aumento da quantidade de dispositivos conectados em redes naturalmente exigirá o uso dessas novas ferramentas, a fim de representar sua mobilidade de uma forma apropriada.
 
 
-Esta pesquisa apresenta o sistema \mbox{STEALTH}\footnote{http://www.nr2.ufpr.br/~asbatista/stealth.html} (\textit{\textbf{S}ocial \textbf{T}rust-Based H\textbf{EALTH} \mbox{Information Dissemination Control)}}, que estabelece redes locais~dinâmicas sem fio e, diante de eventos críticos, suportam a disseminação de dados sensíveis de saúde de maneira controlada. O \mbox{STEALTH} baseia-se em aspectos sociais dos proprietários dos dispositivos e de suas relações para mensurar a confiança dos dispositivos de rede e agrupá-los em comunidades. Essa forma de agrupamento dos dispositivos contribui para as tomadas de decisão acerca da disseminação dos dados sensíveis, e limita-a aos dispositivos de uma mesma comunidade.
-%Diante de 
-\agn{Em}
-situações emergenciais de saúde do proprietário do dispositivo, o sistema dissemina seus dados sensíveis de modo controlado às pessoas competentes, fisicamente próximas ao evento emergencial e com interesse em saúde. No melhor de nosso conhecimento, este é o primeiro trabalho \as{sobre}
+Esta pesquisa apresenta o sistema \mbox{STEALTH}\footnote{http://www.nr2.ufpr.br/~asbatista/stealth.html} (\textit{\textbf{S}ocial \textbf{T}rust-Based H\textbf{EALTH} \mbox{Information Dissemination Control)}}, que estabelece redes locais~dinâmicas sem fio e, diante de eventos críticos, suportam a disseminação de dados sensíveis de saúde de maneira controlada. O \mbox{STEALTH} baseia-se em aspectos sociais dos proprietários dos dispositivos e de suas relações para mensurar a confiança dos dispositivos de rede e agrupá-los em comunidades. Essa forma de agrupamento dos dispositivos contribui para as tomadas de decisão acerca da disseminação dos dados sensíveis, e limita-a aos dispositivos de uma mesma comunidade. Em  situações emergenciais de saúde do proprietário do dispositivo, o sistema dissemina seus dados sensíveis de modo controlado às pessoas competentes, fisicamente próximas ao evento emergencial e com interesse em saúde. No melhor de nosso conhecimento, este é o primeiro trabalho sobre
 %voltado para 
-disseminação de dados de saúde em ambientes urbanos dinâmicos, externos às estruturas hospitalares  \as{e domiciliar}\agn{es}. 
+disseminação de dados de saúde em ambientes urbanos dinâmicos, externos aos
+ambientes de cuidados de saúde.
+%estruturas hospitalares  \as{e domiciliar}\agn{es}. 
 
 Este artigo está organizado da seguinte forma: A Seção~\ref{sec:sistema} descreve o \mbox{STEALTH} e seu funcionamento. A Seção~\ref{sec:aval} detalha a avaliação do sistema. A Seção~\ref{sec:results} apresenta os resultados obtidos. A Seção~\ref{sec:conc} apresenta a conclusão e as contribuições deste trabalho.
 
@@ -169,18 +170,9 @@ Este artigo está organizado da seguinte forma: A Seção~\ref{sec:sistema} desc
 \section{STEALTH: Controle de Disseminação de Dados Pessoais Sensíveis} \label{sec:sistema}
 
 O sistema \mbox{STEALTH} dissemina dados sensíveis pessoais diante de um evento emergencial de modo oportuno e de maneira controlada às pessoas fisicamente próximas e com interesse em saúde. O \mbox{STEALTH} estabelece redes locais dinâmicas sem fio para suportar
-a formação de comunidades pelo agrupamento dos dispositivos por meio de aspectos sociais das pessoas e de suas relações sociais, conforme ilustra a Figura~\ref{fig:modeloRede}.
+a formação de comunidades pelo agrupamento dos dispositivos por meio de aspectos sociais das pessoas e de suas relações, conforme ilustra a Figura~\ref{fig:modeloRede}.
 %Esses aspectos são empregados para avaliar a
-\agn{[SUGESTÃO: A avaliação da confiança dos dispositivos ocorre durante suas interações, empregando-se as informações que eles portam naquele instante.][REMOVER: }
-A avaliação da confiança dos dispositivos durante suas interações ocorre por meio \as{desses aspectos}.
-%As abordagens comuns na literatura para avaliar a confiança dos dispositivos, como as técnicas de reputação e recomendação, dependem de longo histórico de interações. 
-\as{, sendo avaliada/mensurada/???} 
-Contudo, o \mbox{STEALTH} avalia a confiança dos dispositivos
-\agn{diante das}
-informações que eles portam ao interagirem.\agn{]} Esse comportamento o recomenda para atuar em condições~\textit{Zero-Knowledge}~\cite{kim2015hcs}).
-A arquitetura do \mbox{STEALTH}, vista 
-%apresentada 
-na Figura~\ref{fig:ArquiteturaStealth}, possui um módulo {\it Gestão de Comunidades}, responsável por criar e atualizar as comunidades de interesse (CoI) estabelecidas ao longo do tempo a partir da interação entre os dispositivos das pessoas portadoras; e um módulo {\it Gestão de Eventos Críticos}, responsável por verificar e disseminar os dados sensíveis da pessoa em situação emergencial ao dispositivo da pessoa competente durante eventos críticos.\footnote{Detalhes dos módulos, algoritmos e equações do  \mbox{STEALTH} encontram-se na dissertação.}
+A avaliação da confiança dos dispositivos ocorre durante suas interações, empregando-se as informações que eles portam naquele instante. A arquitetura do \mbox{STEALTH}, retratada na Figura~\ref{fig:ArquiteturaStealth}, possui um módulo {\it Gestão de Comunidades}, responsável por criar e atualizar as comunidades de interesse (CoI) estabelecidas ao longo do tempo a partir da interação entre os dispositivos das pessoas portadoras; e um módulo {\it Gestão de Eventos Críticos}, responsável por verificar e disseminar os dados sensíveis da pessoa em situação emergencial ao dispositivo da pessoa competente durante eventos críticos.\footnote{Detalhes dos módulos, algoritmos e equações do  \mbox{STEALTH} encontram-se na dissertação.}
 
 \vspace{-0.5cm}
 \noindent
@@ -287,13 +279,7 @@ estabelecem redes locais, ilustradas na Figura \ref{fig:interacoesnotempo}, quan
 
 \section{Avaliação} \label{sec:aval}
 
-O sistema \mbox{STEALTH} foi implementado e simulado no simulador NS-3, versão 3.28.\footnote{Código disponível em https://github.com/agnaldosb/stealth} Todos os resultados correspondem à média de 35 simulações, com intervalo de confiança de 95\%. A análise da disponibilidade dos dados provida pelo \mbox{STEALTH} levou em conta a evolução das comunidades de interesse em saúde ao longo do tempo e a métrica \textit{Número médio de comunidades de interesse em saúde}~($N_{C}$). A
-\agn{mensuração da}
-análise da confiabilidade
-%é mensurada 
-%\agn{ocorre}
-%ocorre
-através das métricas \textit{Taxa de sucesso no acesso aos dados}~($TS$), \textit{Taxa de dados não acessados}~($TN_a$), \textit{Tempo médico de acesso aos dados}~($MTA$) e \textit{Taxa de sucesso no acesso aos dados por competência}~($TS_{Skill}$). Os parâmetros empregados nas simulações, bem como todos os resultados obtidos estão na dissertação.
+O sistema \mbox{STEALTH} foi implementado e simulado no simulador NS-3, versão 3.28.\footnote{Código disponível em https://github.com/agnaldosb/stealth} Todos os resultados correspondem à média de 35 simulações, com intervalo de confiança de 95\%. A análise da disponibilidade dos dados provida pelo \mbox{STEALTH} levou em conta a evolução das comunidades de interesse em saúde ao longo do tempo e a métrica \textit{Número médio de comunidades de interesse em saúde}~($N_{C}$). A análise da confiabilidade levou em conta as métricas \textit{Taxa de sucesso no acesso aos dados}~($TS$), \textit{Taxa de dados não acessados}~($TN_a$), \textit{Tempo médico de acesso aos dados}~($MTA$) e \textit{Taxa de sucesso no acesso aos dados por competência}~($TS_{Skill}$). Os parâmetros empregados nas simulações, bem como todos os resultados obtidos estão na dissertação.
 
 \begin{table}[H]
 \setlength{\extrarowheight}{2.0pt}
@@ -403,9 +389,7 @@ A falta da comunidade do nó 37 impediu que 68,57\% de seus dados sensíveis fos
 Os interesses e competências, associados às comunidades de interesse, além de possibilitarem avaliar a confiança dos nós, também permitem controlar a disseminação dos seus dados sensíveis. Isso ocorre em uma condição \textit{Zero-Knowledge},
 %visto que as comunidades de saúde são recriadas periodicamente, 
 visto a recriação periódica das comunidades de saúde.
-e desconsidera interações anteriores entre os nós da rede. O sucesso no acesso aos dados por competência ($TS_{Skill}$) comprova a
-%importância 
-\agn{relevância}
+e desconsidera interações anteriores entre os nós da rede. O sucesso no acesso aos dados por competência ($TS_{Skill}$) comprova a relevância
 das competências nas comunidades estabelecidas. Através da Tabela~\ref{tab:taxaMedia}, observa-se que os \textit{médicos} acessaram os dados sensíveis em 30,03\% das situações emergenciais. Nesses momentos, o \mbox{STEALTH} detectou a presença de pelo menos um \textit{médico} na comunidade de saúde dos nós avaliados.
 
 \vspace{-0.2cm}
@@ -413,18 +397,10 @@ das competências nas comunidades estabelecidas. Através da Tabela~\ref{tab:tax
 \section{Conclusão}
 \label{sec:conc}
 
-\as{Esta dissertação tratou do problema de proporcionar a entrega de dados sensíveis de saúde de modo robusto em ambientes urbanos dinâmicos, }\agn{a fim de contribuir para}\as{
-%modo auxiliar 
-uma ação rápida e efetiva. Para lidar com esse  desafio, apresentou-se o
-%o sistema 
-\mbox{STEALTH}},
-%Esta dissertação apresentou \mbox{STEALTH}, 
-um sistema para disseminar dados sensíveis de saúde de forma controlada em redes locais dinâmicas sem fio. Ele estabelece agrupamentos virtuais por meio de comunidades de interesse e aplica confiança social
-%a fim de 
-\agn{para}
-permitir aos dispositivos decidirem de maneira robusta
-%, num dado momento, 
-sobre a disseminação de dados diante de uma situação emergencial. Uma avaliação do \mbox{STEALTH} num ambiente realístico mostrou a sua eficácia ao antecipar a identificação de pessoas próximas para auxiliar em eventos críticos de saúde, e sua confiabilidade na disseminação controlada dos dados sensíveis das pessoas em situação emergencial. As contribuições deste trabalho resultaram na publicação~\cite{batista2019sbseg}.
+Esta dissertação tratou do problema de proporcionar a disseminação de dados sensíveis de saúde de modo robusto em ambientes urbanos dinâmicos, a fim de contribuir para uma ação rápida e efetiva.
+%\as{Para lidar com esse  desafio,} 
+\agn{Para enfrentar esse desafio,}
+apresentou-se o \mbox{STEALTH}, um sistema para disseminar dados sensíveis de saúde de forma controlada em redes locais dinâmicas sem fio. Ele estabelece agrupamentos virtuais por meio de comunidades de interesse e aplica confiança social para permitir aos dispositivos decidirem de maneira robusta sobre a disseminação de dados diante de uma situação emergencial. Uma avaliação do \mbox{STEALTH} num ambiente realístico mostrou a sua eficácia ao antecipar a identificação de pessoas próximas para auxiliar em eventos críticos de saúde, e sua confiabilidade na disseminação controlada dos dados sensíveis das pessoas em situação emergencial. As contribuições deste trabalho resultaram na publicação~\cite{batista2019sbseg}.
 
 
 %Esta dissertação apresentou \mbox{STEALTH}, um sistema para disseminar dados sensíveis de saúde de forma controlada em redes locais dinâmicas sem fio. Ele estabelece agrupamentos virtuais por meio de comunidades de interesses e aplica confiança social a fim de permitir aos dispositivos decidirem de maneira robusta num dado momento sobre a disseminação de dados diante de uma situação emergencial. Uma avaliação do \mbox{STEALTH} num ambiente realístico mostrou a sua eficácia ao antecipar a identificação de pessoas próximas para auxiliar em eventos críticos de saúde, e sua confiabilidade na disseminação controlada dos dados sensíveis das pessoas em situação emergencial. As contribuições deste trabalho resultaram na publicação~\cite{batista2019sbseg}.
